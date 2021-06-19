@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+//Components
+import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
+import { Switch, Route } from 'react-router-dom';
+import { ReadAll } from './Components/ReadAll/ReadAll';
+import { Create } from './Components/Create/Create';
+import { DeleteAll } from './Components/DeleteAll/DeleteAll';
+import { About } from './Components/About/About';
+
+//Assets
+import logo from './Img/logo.png';
+
+//Styles
+import './Styles/App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='page'>
+      <div className='logoBar'>
+        <img className='logoImg' src={logo} alt='Logotipo do anime Sakura Cardcaptor'></img>
+      </div>
+
+      <div className='navBar'>
+        <Navbar className="justify-content-center" expand="sm">
+          <Nav>
+            <Nav.Link id="link-style" href="/">Início</Nav.Link>
+            <Nav.Link id="link-style" href="/create">Criar</Nav.Link>
+            <Nav.Link id="link-style" href="/delete-all">Deletar Tudo</Nav.Link>
+            <Nav.Link id="link-style" href="about">Sobre</Nav.Link>
+          </Nav>
+        </Navbar>
+      </div>
+
+      <Container className="app-container">
+        <Row>
+          <Col>
+            <Switch>
+              <Route path="/about" component={About}></Route>
+              <Route path="/" exact={true} component={ReadAll}></Route>
+              <Route path="/create" component={Create}></Route>
+              <Route path="/delete-all" component={DeleteAll}></Route>
+            </Switch>
+          </Col>
+        </Row>
+      </Container>
+
     </div>
   );
 }
 
-export default App;
+
