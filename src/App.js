@@ -1,19 +1,26 @@
 import React from 'react';
 
+//Routes
+import {Switch, Route} from 'react-router-dom'
+
+//Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import {Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
+
 //Components
-import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
-import { Switch, Route } from 'react-router-dom';
-import { ReadAll } from './Components/ReadAll/ReadAll';
-import { Create } from './Components/Create/Create';
-import { DeleteAll } from './Components/DeleteAll/DeleteAll';
-import { About } from './Components/About/About';
+import {ReadAll} from './Components/ReadAll/ReadAll'
+import {Create} from './Components/Create/Create'
+import {DeleteAll} from './Components/DeleteAll/DeleteAll'
+import {About} from './Components/About/About'
+import {ReadSingle} from './Components/ReadSingle/ReadSingle'
+import {Delete} from './Components/Delete/Delete'
+import {Update} from './Components/Update/Update'
 
 //Assets
 import logo from './Img/logo.png';
 
 //Styles
 import './Styles/App.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function App() {
@@ -42,6 +49,9 @@ export default function App() {
               <Route path="/" exact={true} component={ReadAll}></Route>
               <Route path="/create" component={Create}></Route>
               <Route path="/delete-all" component={DeleteAll}></Route>
+              <Route path="/view/:id" component={ReadSingle}></Route>
+              <Route path="/delete/:id" component={Delete}></Route>
+              <Route path="/update/:id" component={Update}></Route>
             </Switch>
           </Col>
         </Row>

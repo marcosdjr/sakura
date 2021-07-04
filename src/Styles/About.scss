@@ -1,0 +1,45 @@
+.coluna-about {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 0rem;
+
+    .card-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #eeb5d8;
+        border: 0;
+        color: #b60773;
+
+        .card-about-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-family: cursive;
+            text-decoration: underline;
+            font-size: 1.3rem;
+            background-color: #b60773;
+            padding: 10px;
+            color: #eeb5d8;
+            font-weight: 400;
+            border-radius: 3rem;
+        }
+
+        .card-img-top.about-image {
+            object-fit: cover;
+
+            max-width: 20rem;
+            max-height: 20rem;
+            border-radius: 2rem;
+        }
+
+        .about.card-text {
+            color: #b60773;
+            font-style: normal;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.noData {
+    font-size: 2rem;
+    background-color: #b60773;
+    padding: 10px;
+    margin-top: 5rem;
+    color: #eeb5d8;
+    font-weight: 400;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    border-radius:3rem;
+}
+
+.readallcont {
+    padding-top:0;
+    
+    
+    .readall {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: center;
+        
+        
+    }
+}
+.link-style__content {
+    font-size: 1.3rem;
+    background-color: #b60773;
+    padding: 10px;
+    margin-top:-2rem;
+    color: #eeb5d8;
+    font-weight: 400;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    border-radius: 3rem;
+}

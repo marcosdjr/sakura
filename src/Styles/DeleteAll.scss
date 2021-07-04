@@ -1,0 +1,58 @@
+.card.title{
+    color: #000000;
+}
+
+.card-text {
+    color: #000000;
+    text-align: justify;
+}
+
+.btn:last-child {
+    margin-left: 0.5rem;
+}
+
+.coluna-delete-all {
+    padding: 0;
+    margin-top: -7rem;
+    margin-bottom:2rem;
+    color: #b60773;
+    align-items: center;
+    
+    
+   
+
+    .link-style__content {
+        font-size: 1.3rem;
+        background-color: #b60773;
+        padding: 10px;
+        margin-top: 5rem;
+        color: #eeb5d8;
+        font-weight: 400;
+        text-align: center;
+        font-family: cursive;
+        font-style: italic;
+        border-radius: 3rem;
+    }
+    
+    .card-delete-all{
+        font-size: 1rem;
+        
+        
+        
+        font-weight: 400;
+        text-align: center;
+        font-family: cursive;
+        font-style: italic;
+      
+        
+       
+        
+
+        .card-text{
+            color: #b60773;
+            text-align: center;
+        }
+        
+    }
+    
+}

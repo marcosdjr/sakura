@@ -1,0 +1,43 @@
+.col-img-readsingle {
+  align-content: center;
+  text-align: center;
+
+  .info-img-readsingle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15rem;
+    align-content: center;
+  }
+}
+.actions {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+  font-family: cursive;
+  .btn.btn-info {
+    background-color: #ec1db8;
+    border-color: #eeb5d8;
+    align-content: center;
+    .actions.btn:last-child {
+      margin-right: 0.5rem;
+    }
+  }
+}
+.info-title-readsingle {
+  font-size: 2rem;
+  color: #b60773;
+  text-align: center;
+  font-style: italic;
+  font-family: cursive;
+  margin-bottom: 1rem;
+}
+
+.btn.btn-primary {
+  background-color: #ec1db8;
+  border-color: #eeb5d8;
+}
+
+.btn.btn.btn-primary:hover {
+  background-color: #eeb5d8;
+  border-color: #ec1db8;
+}
